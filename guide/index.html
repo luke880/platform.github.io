@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="工作流">
-    <meta name="description" content="简介工作流基于activity开源框架做二次封装功能，支持中国特色工作流：有撤回、驳回、驳回发起人、驳回上一步、任意节点驳回、驳回后直达驳回节点、任意节点跳转、会签后根据会签结果走不同出口、会签加签、减签等等。
-">
+    <meta name="keywords" content="中台API-V1.0.0, 玄鉴中台">
+    <meta name="description" content="平台介绍">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
 
     
 
-    <title>工作流 | 玄鉴中台</title>
+    <title>中台API-V1.0.0 | 玄鉴中台</title>
     <link rel="icon" type="image/png" href="/platform.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/platform.github.io/libs/awesome/css/all.min.css">
@@ -225,12 +224,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0407%2Fb5a75e87j00qr6f1d004cc000sf00iym.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660122074&t=f93cde31c6379525fd9f51efeb4e85e8')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/platform.github.io/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">工作流</h1>
+                    <h1 class="description center-align post-title">中台API-V1.0.0</h1>
                 </div>
             </div>
         </div>
@@ -346,27 +345,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
-                                <span class="chip bg-color">工作流</span>
-                            </a>
-                        
-                            <a href="/platform.github.io/tags/activity/">
-                                <span class="chip bg-color">activity</span>
+                            <a href="/platform.github.io/">
+                                <span class="chip bg-color"></span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/platform.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="post-category">
-                                工作流
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -396,7 +382,435 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>工作流基于activity开源框架做二次封装功能，支持中国特色工作流：有撤回、驳回、驳回发起人、驳回上一步、任意节点驳回、驳回后直达驳回节点、任意节点跳转、会签后根据会签结果走不同出口、会签加签、减签等等。</p>
+                <h1 id="服务端口介绍"><a href="#服务端口介绍" class="headerlink" title="服务端口介绍"></a>服务端口介绍</h1><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>名称</th>
+<th>服务名</th>
+<th>默认端口</th>
+<th>服务前缀</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>支撑</td>
+<td>网关服务</td>
+<td>easyweb-gateway</td>
+<td>8089</td>
+<td>&#x2F;gateway</td>
+</tr>
+<tr>
+<td>支撑</td>
+<td>登录授权服务</td>
+<td>easyweb-auth</td>
+<td>7200</td>
+<td>&#x2F;auth</td>
+</tr>
+<tr>
+<td>支撑</td>
+<td>组织架构服务</td>
+<td>easyweb-system</td>
+<td>7100</td>
+<td>&#x2F;system</td>
+</tr>
+<tr>
+<td>支撑</td>
+<td>表单服务</td>
+<td>easyweb-form</td>
+<td>6100</td>
+<td>&#x2F;form</td>
+</tr>
+<tr>
+<td>支撑</td>
+<td>模型服务</td>
+<td>easyweb-model</td>
+<td>6200</td>
+<td>&#x2F;model</td>
+</tr>
+<tr>
+<td>支撑</td>
+<td>引擎服务</td>
+<td>easyweb-engine</td>
+<td>6300</td>
+<td>&#x2F;engine</td>
+</tr>
+<tr>
+<td>共享</td>
+<td>文件服务</td>
+<td>easyweb-oss</td>
+<td>8100</td>
+<td>&#x2F;oss</td>
+</tr>
+<tr>
+<td>共享</td>
+<td>消息服务</td>
+<td>easyweb-message</td>
+<td>8200</td>
+<td>&#x2F;message</td>
+</tr>
+<tr>
+<td>共享</td>
+<td>消息服务</td>
+<td>easyweb-message</td>
+<td>8200</td>
+<td>&#x2F;message</td>
+</tr>
+</tbody></table>
+<h1 id="中台API-V1-0-0"><a href="#中台API-V1-0-0" class="headerlink" title="中台API-V1.0.0"></a>中台API-V1.0.0</h1><h2 id="鉴权"><a href="#鉴权" class="headerlink" title="鉴权"></a>鉴权</h2><p>POST &#x2F;auth&#x2F;oauth&#x2F;accesstoken</p>
+<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>位置</th>
+<th>类型</th>
+<th>必选</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>data</td>
+<td>query</td>
+<td>string</td>
+<td>是</td>
+<td>SM4(userName+pwd)</td>
+</tr>
+<tr>
+<td>appKey</td>
+<td>header</td>
+<td>string</td>
+<td>是</td>
+<td>none</td>
+</tr>
+<tr>
+<td>appSecret</td>
+<td>header</td>
+<td>string</td>
+<td>是</td>
+<td>none</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>返回示例</p>
+</blockquote>
+<h3 id="返回结果"><a href="#返回结果" class="headerlink" title="返回结果"></a>返回结果</h3><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码含义</th>
+<th>说明</th>
+<th>数据模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>200</td>
+<td><a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>OK</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>403</td>
+<td><a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc7231#section-6.5.3">Forbidden</a></td>
+<td>Forbidden</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Not Found</td>
+<td>Inline</td>
+</tr>
+</tbody></table>
+<h3 id="返回数据结构"><a href="#返回数据结构" class="headerlink" title="返回数据结构"></a>返回数据结构</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  code<span class="punctuation">:</span><span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">  data<span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">    access_token<span class="punctuation">:</span> <span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc3MDAxNjMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJqdGkiOiI2ZjcxOTI2OC0wYzczLTRmOTItYjgyMy05YzcwMWFmN2FmNjMiLCJjbGllbqRfaWQiOiJlYXN5d2ViIiwic2NvcGUiOlsiYXBwIl0sImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2hfZXhwIjoxMjk1OTk5fX0.cxic4LO8e7r0BFHr3_P0flV_6IqwRkfLlAo9PFKp6wE&quot;</span><span class="punctuation">,</span></span><br><span class="line">    expires_in<span class="punctuation">:</span> <span class="number">7200</span></span><br><span class="line">    info<span class="punctuation">:</span><span class="punctuation">&#123;</span>refresh_exp<span class="punctuation">:</span><span class="number">1296000</span><span class="punctuation">&#125;</span> <span class="punctuation">,</span></span><br><span class="line">    jti<span class="punctuation">:</span><span class="string">&quot;6f719268-0c73-4f92-b823-9c701af7af63&quot;</span><span class="punctuation">,</span></span><br><span class="line">    refresh_token<span class="punctuation">:</span><span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzdXBlcmFkbWluIiwic2NvcGUiOlsiYXBwIl0sImF0aSI6IjZmNzE5MjY4LTBjNzMtNGY5Mi1iODIzLTljNzAxYWY3YWY2MdIsImV4cCI6MTY1ODk4ODk2MywianRpIjoiZGVjM2Y2NGEtMzE0NS00NWMzLThjMzctYmViOWZjOTZmMjMyIiwiY2xpZW50X2lkIjoiZWFzeXdlYiIsImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2wfZXhwIjoxMjk1OTk5fX0.-leRR9flb3154M94qbq94lMrizEFFd5N90oBiCDCojs&quot;</span><span class="punctuation">,</span></span><br><span class="line">    token_type<span class="punctuation">:</span><span class="string">&quot;bearer&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  message<span class="punctuation">:</span><span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="枚举值"><a href="#枚举值" class="headerlink" title="枚举值"></a>枚举值</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>statusCode</td>
+<td>100 CONTINUE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>101 SWITCHING_PROTOCOLS</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>102 PROCESSING</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>103 CHECKPOINT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>200 OK</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>201 CREATED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>202 ACCEPTED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>203 NON_AUTHORITATIVE_INFORMATION</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>204 NO_CONTENT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>205 RESET_CONTENT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>206 PARTIAL_CONTENT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>207 MULTI_STATUS</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>208 ALREADY_REPORTED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>226 IM_USED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>300 MULTIPLE_CHOICES</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>301 MOVED_PERMANENTLY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>302 FOUND</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>302 MOVED_TEMPORARILY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>303 SEE_OTHER</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>304 NOT_MODIFIED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>305 USE_PROXY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>307 TEMPORARY_REDIRECT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>308 PERMANENT_REDIRECT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>400 BAD_REQUEST</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>401 UNAUTHORIZED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>402 PAYMENT_REQUIRED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>403 FORBIDDEN</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>404 NOT_FOUND</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>405 METHOD_NOT_ALLOWED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>406 NOT_ACCEPTABLE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>407 PROXY_AUTHENTICATION_REQUIRED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>408 REQUEST_TIMEOUT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>409 CONFLICT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>410 GONE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>411 LENGTH_REQUIRED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>412 PRECONDITION_FAILED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>413 PAYLOAD_TOO_LARGE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>413 REQUEST_ENTITY_TOO_LARGE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>414 URI_TOO_LONG</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>414 REQUEST_URI_TOO_LONG</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>415 UNSUPPORTED_MEDIA_TYPE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>416 REQUESTED_RANGE_NOT_SATISFIABLE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>417 EXPECTATION_FAILED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>418 I_AM_A_TEAPOT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>419 INSUFFICIENT_SPACE_ON_RESOURCE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>420 METHOD_FAILURE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>421 DESTINATION_LOCKED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>422 UNPROCESSABLE_ENTITY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>423 LOCKED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>424 FAILED_DEPENDENCY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>425 TOO_EARLY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>426 UPGRADE_REQUIRED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>428 PRECONDITION_REQUIRED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>429 TOO_MANY_REQUESTS</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>431 REQUEST_HEADER_FIELDS_TOO_LARGE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>451 UNAVAILABLE_FOR_LEGAL_REASONS</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>500 INTERNAL_SERVER_ERROR</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>501 NOT_IMPLEMENTED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>502 BAD_GATEWAY</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>503 SERVICE_UNAVAILABLE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>504 GATEWAY_TIMEOUT</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>505 HTTP_VERSION_NOT_SUPPORTED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>506 VARIANT_ALSO_NEGOTIATES</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>507 INSUFFICIENT_STORAGE</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>508 LOOP_DETECTED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>509 BANDWIDTH_LIMIT_EXCEEDED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>510 NOT_EXTENDED</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>511 NETWORK_AUTHENTICATION_REQUIRED</td>
+</tr>
+</tbody></table>
 
                 
             </div>
@@ -423,7 +837,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luke880.github.io/platform.github.io/2022/07/11/workflow-engine/">https://luke880.github.io/platform.github.io/2022/07/11/workflow-engine/</a>
+                    <a href="https://luke880.github.io/platform.github.io/guide/index.html">https://luke880.github.io/platform.github.io/guide/index.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -461,12 +875,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
-                                    <span class="chip bg-color">工作流</span>
-                                </a>
-                            
-                                <a href="/platform.github.io/tags/activity/">
-                                    <span class="chip bg-color">activity</span>
+                                <a href="/platform.github.io/">
+                                    <span class="chip bg-color"></span>
                                 </a>
                             
                         </div>
@@ -516,12 +926,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/platform.github.io/2022/07/11/workflow-engine/">
+                <a href="/platform.github.io/guide/index.html">
                     <div class="card-image">
                         
-                        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0407%2Fb5a75e87j00qr6f1d004cc000sf00iym.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660122074&t=f93cde31c6379525fd9f51efeb4e85e8" class="responsive-img" alt="工作流">
                         
-                        <span class="card-title">工作流</span>
+                        <img src="/platform.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="中台API-V1.0.0">
+                        
+                        <span class="card-title">中台API-V1.0.0</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -536,12 +947,8 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/platform.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="post-category">
-                                    工作流
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Luke
                             
                         </span>
                     </div>
@@ -550,12 +957,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
-                        <span class="chip bg-color">工作流</span>
-                    </a>
-                    
-                    <a href="/platform.github.io/tags/activity/">
-                        <span class="chip bg-color">activity</span>
+                    <a href="/platform.github.io/">
+                        <span class="chip bg-color"></span>
                     </a>
                     
                 </div>
@@ -566,16 +969,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/platform.github.io/2022/07/08/easyweb/">
+                <a href="/platform.github.io/guide/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/platform.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="玄剑中台">
+                        <img src="/platform.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="中台API-V1.0.0">
                         
-                        <span class="card-title">玄剑中台</span>
+                        <span class="card-title">中台API-V1.0.0</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -586,29 +989,22 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-11
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/platform.github.io/categories/%E6%9E%B6%E6%9E%84%E5%9B%BE/" class="post-category">
-                                    架构图
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Luke
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/platform.github.io/tags/%E4%B8%AD%E5%8F%B0/">
-                        <span class="chip bg-color">中台</span>
-                    </a>
-                    
-                    <a href="/platform.github.io/tags/%E6%9E%B6%E6%9E%84%E5%9B%BE/">
-                        <span class="chip bg-color">架构图</span>
+                    <a href="/platform.github.io/">
+                        <span class="chip bg-color"></span>
                     </a>
                     
                 </div>

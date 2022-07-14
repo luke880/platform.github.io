@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="中台API v1.0.0, 玄鉴中台">
+    <meta name="keywords" content="中台API-V1.0.0, 玄鉴中台">
     <meta name="description" content="平台介绍">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
 
     
 
-    <title>中台API v1.0.0 | 玄鉴中台</title>
+    <title>中台API-V1.0.0 | 玄鉴中台</title>
     <link rel="icon" type="image/png" href="/platform.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/platform.github.io/libs/awesome/css/all.min.css">
@@ -65,11 +65,22 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/platform.github.io/api" class="waves-effect waves-light">
+    <a href="/platform.github.io/guide" class="waves-effect waves-light">
       
       <i class="fas fa-book" style="zoom: 0.6;"></i>
       
-      <span>API</span>
+      <span>指南</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a target="_blank" rel="noopener" href="http://192.168.2.117" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>演示</span>
     </a>
     
   </li>
@@ -103,28 +114,6 @@
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
       <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/platform.github.io/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/platform.github.io/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -166,11 +155,22 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/platform.github.io/api" class="waves-effect waves-light">
+		<a href="/platform.github.io/guide" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-book"></i>
 			
-			API
+			指南
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a target="_blank" rel="noopener" href="http://192.168.2.117" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			演示
 		</a>
           
         </li>
@@ -208,28 +208,6 @@
           
         </li>
         
-        <li class="m-nav-item">
-	  
-		<a href="/platform.github.io/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/platform.github.io/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
         
     </ul>
 </div>
@@ -246,12 +224,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/platform.github.io/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/platform.github.io/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">中台API v1.0.0</h1>
+                    <h1 class="description center-align post-title">中台API-V1.0.0</h1>
                 </div>
             </div>
         </div>
@@ -371,10 +349,6 @@
                                 <span class="chip bg-color"></span>
                             </a>
                         
-                            <a href="/platform.github.io/">
-                                <span class="chip bg-color"></span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -424,7 +398,7 @@
 <td>query</td>
 <td>string</td>
 <td>是</td>
-<td>SM4(userName-pwd)</td>
+<td>SM4(userName+pwd)</td>
 </tr>
 <tr>
 <td>appKey</td>
@@ -478,12 +452,12 @@
 <td>Inline</td>
 </tr>
 </tbody></table>
-<h3 id="返回数据结构"><a href="#返回数据结构" class="headerlink" title="返回数据结构"></a>返回数据结构</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span><span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">    access_token<span class="punctuation">:</span> <span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc3MDAxNjMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJqdGkiOiI2ZjcxOTI2OC0wYzczLTRmOTItYjgyMy05YzcwMWFmN2FmNjMiLCJjbGllbqRfaWQiOiJlYXN5d2ViIiwic2NvcGUiOlsiYXBwIl0sImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2hfZXhwIjoxMjk1OTk5fX0.cxic4LO8e7r0BFHr3_P0flV_6IqwRkfLlAo9PFKp6wE&quot;</span><span class="punctuation">,</span></span><br><span class="line">    expires_in<span class="punctuation">:</span> <span class="number">7200</span></span><br><span class="line">    info<span class="punctuation">:</span><span class="punctuation">&#123;</span>refresh_exp<span class="punctuation">:</span><span class="number">1296000</span><span class="punctuation">&#125;</span> <span class="punctuation">,</span></span><br><span class="line">    jti<span class="punctuation">:</span><span class="string">&quot;6f719268-0c73-4f92-b823-9c701af7af63&quot;</span><span class="punctuation">,</span></span><br><span class="line">    refresh_token<span class="punctuation">:</span><span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzdXBlcmFkbWluIiwic2NvcGUiOlsiYXBwIl0sImF0aSI6IjZmNzE5MjY4LTBjNzMtNGY5Mi1iODIzLTljNzAxYWY3YWY2MdIsImV4cCI6MTY1ODk4ODk2MywianRpIjoiZGVjM2Y2NGEtMzE0NS00NWMzLThjMzctYmViOWZjOTZmMjMyIiwiY2xpZW50X2lkIjoiZWFzeXdlYiIsImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2wfZXhwIjoxMjk1OTk5fX0.-leRR9flb3154M94qbq94lMrizEFFd5N90oBiCDCojs&quot;</span><span class="punctuation">,</span></span><br><span class="line">    token_type<span class="punctuation">:</span><span class="string">&quot;bearer&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  message<span class="punctuation">:</span><span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h3 id="返回数据结构"><a href="#返回数据结构" class="headerlink" title="返回数据结构"></a>返回数据结构</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  code<span class="punctuation">:</span><span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">  data<span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">    access_token<span class="punctuation">:</span> <span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc3MDAxNjMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJqdGkiOiI2ZjcxOTI2OC0wYzczLTRmOTItYjgyMy05YzcwMWFmN2FmNjMiLCJjbGllbqRfaWQiOiJlYXN5d2ViIiwic2NvcGUiOlsiYXBwIl0sImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2hfZXhwIjoxMjk1OTk5fX0.cxic4LO8e7r0BFHr3_P0flV_6IqwRkfLlAo9PFKp6wE&quot;</span><span class="punctuation">,</span></span><br><span class="line">    expires_in<span class="punctuation">:</span> <span class="number">7200</span></span><br><span class="line">    info<span class="punctuation">:</span><span class="punctuation">&#123;</span>refresh_exp<span class="punctuation">:</span><span class="number">1296000</span><span class="punctuation">&#125;</span> <span class="punctuation">,</span></span><br><span class="line">    jti<span class="punctuation">:</span><span class="string">&quot;6f719268-0c73-4f92-b823-9c701af7af63&quot;</span><span class="punctuation">,</span></span><br><span class="line">    refresh_token<span class="punctuation">:</span><span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzdXBlcmFkbWluIiwic2NvcGUiOlsiYXBwIl0sImF0aSI6IjZmNzE5MjY4LTBjNzMtNGY5Mi1iODIzLTljNzAxYWY3YWY2MdIsImV4cCI6MTY1ODk4ODk2MywianRpIjoiZGVjM2Y2NGEtMzE0NS00NWMzLThjMzctYmViOWZjOTZmMjMyIiwiY2xpZW50X2lkIjoiZWFzeXdlYiIsImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2wfZXhwIjoxMjk1OTk5fX0.-leRR9flb3154M94qbq94lMrizEFFd5N90oBiCDCojs&quot;</span><span class="punctuation">,</span></span><br><span class="line">    token_type<span class="punctuation">:</span><span class="string">&quot;bearer&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  message<span class="punctuation">:</span><span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
 
 
 
 
-<h4 id="枚举值"><a href="#枚举值" class="headerlink" title="枚举值"></a>枚举值</h4><table>
+<h2 id="枚举值"><a href="#枚举值" class="headerlink" title="枚举值"></a>枚举值</h2><table>
 <thead>
 <tr>
 <th>属性</th>
@@ -831,10 +805,6 @@
                                     <span class="chip bg-color"></span>
                                 </a>
                             
-                                <a href="/platform.github.io/">
-                                    <span class="chip bg-color"></span>
-                                </a>
-                            
                         </div>
                     
                 </div>
@@ -886,9 +856,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/platform.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="中台API v1.0.0">
+                        <img src="/platform.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="中台API-V1.0.0">
                         
-                        <span class="card-title">中台API v1.0.0</span>
+                        <span class="card-title">中台API-V1.0.0</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -912,10 +882,6 @@
 
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/platform.github.io/">
-                        <span class="chip bg-color"></span>
-                    </a>
                     
                     <a href="/platform.github.io/">
                         <span class="chip bg-color"></span>
@@ -936,9 +902,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/platform.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="中台API v1.0.0">
+                        <img src="/platform.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="中台API-V1.0.0">
                         
-                        <span class="card-title">中台API v1.0.0</span>
+                        <span class="card-title">中台API-V1.0.0</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -962,10 +928,6 @@
 
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/platform.github.io/">
-                        <span class="chip bg-color"></span>
-                    </a>
                     
                     <a href="/platform.github.io/">
                         <span class="chip bg-color"></span>
@@ -1100,7 +1062,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2022</span>
             
             <!-- <a href="/platform.github.io/about" target="_blank">Luke</a> -->
             <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> -->
