@@ -394,7 +394,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    341
+                    330
                 </div>
                 
 
@@ -410,6 +410,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/platform.github.io/libs/prism/prism.min.css">
         
 
         
@@ -486,7 +489,18 @@
 <td>Inline</td>
 </tr>
 </tbody></table>
-<h3 id="返回数据结构"><a href="#返回数据结构" class="headerlink" title="返回数据结构"></a>返回数据结构</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  code<span class="punctuation">:</span><span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">  data<span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">    access_token<span class="punctuation">:</span> <span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc3MDAxNjMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJqdGkiOiI2ZjcxOTI2OC0wYzczLTRmOTItYjgyMy05YzcwMWFmN2FmNjMiLCJjbGllbqRfaWQiOiJlYXN5d2ViIiwic2NvcGUiOlsiYXBwIl0sImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2hfZXhwIjoxMjk1OTk5fX0.cxic4LO8e7r0BFHr3_P0flV_6IqwRkfLlAo9PFKp6wE&quot;</span><span class="punctuation">,</span></span><br><span class="line">    expires_in<span class="punctuation">:</span> <span class="number">7200</span></span><br><span class="line">    info<span class="punctuation">:</span><span class="punctuation">&#123;</span>refresh_exp<span class="punctuation">:</span><span class="number">1296000</span><span class="punctuation">&#125;</span> <span class="punctuation">,</span></span><br><span class="line">    jti<span class="punctuation">:</span><span class="string">&quot;6f719268-0c73-4f92-b823-9c701af7af63&quot;</span><span class="punctuation">,</span></span><br><span class="line">    refresh_token<span class="punctuation">:</span><span class="string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzdXBlcmFkbWluIiwic2NvcGUiOlsiYXBwIl0sImF0aSI6IjZmNzE5MjY4LTBjNzMtNGY5Mi1iODIzLTljNzAxYWY3YWY2MdIsImV4cCI6MTY1ODk4ODk2MywianRpIjoiZGVjM2Y2NGEtMzE0NS00NWMzLThjMzctYmViOWZjOTZmMjMyIiwiY2xpZW50X2lkIjoiZWFzeXdlYiIsImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2wfZXhwIjoxMjk1OTk5fX0.-leRR9flb3154M94qbq94lMrizEFFd5N90oBiCDCojs&quot;</span><span class="punctuation">,</span></span><br><span class="line">    token_type<span class="punctuation">:</span><span class="string">&quot;bearer&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  message<span class="punctuation">:</span><span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h3 id="返回数据结构"><a href="#返回数据结构" class="headerlink" title="返回数据结构"></a>返回数据结构</h3><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">[</span>
+  code<span class="token operator">:</span><span class="token number">200</span><span class="token punctuation">,</span>
+  data<span class="token operator">:</span><span class="token punctuation">&#123;</span>
+    access_token<span class="token operator">:</span> <span class="token string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc3MDAxNjMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJqdGkiOiI2ZjcxOTI2OC0wYzczLTRmOTItYjgyMy05YzcwMWFmN2FmNjMiLCJjbGllbqRfaWQiOiJlYXN5d2ViIiwic2NvcGUiOlsiYXBwIl0sImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2hfZXhwIjoxMjk1OTk5fX0.cxic4LO8e7r0BFHr3_P0flV_6IqwRkfLlAo9PFKp6wE"</span><span class="token punctuation">,</span>
+    expires_in<span class="token operator">:</span> <span class="token number">7200</span>
+    info<span class="token operator">:</span><span class="token punctuation">&#123;</span>refresh_exp<span class="token operator">:</span><span class="token number">1296000</span><span class="token punctuation">&#125;</span> <span class="token punctuation">,</span>
+    jti<span class="token operator">:</span><span class="token string">"6f719268-0c73-4f92-b823-9c701af7af63"</span><span class="token punctuation">,</span>
+    refresh_token<span class="token operator">:</span><span class="token string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzdXBlcmFkbWluIiwic2NvcGUiOlsiYXBwIl0sImF0aSI6IjZmNzE5MjY4LTBjNzMtNGY5Mi1iODIzLTljNzAxYWY3YWY2MdIsImV4cCI6MTY1ODk4ODk2MywianRpIjoiZGVjM2Y2NGEtMzE0NS00NWMzLThjMzctYmViOWZjOTZmMjMyIiwiY2xpZW50X2lkIjoiZWFzeXdlYiIsImluZm8iOnsicGhvbmUiOiIxNTgqKioqMDAwMSIsInJlZnJlc2wfZXhwIjoxMjk1OTk5fX0.-leRR9flb3154M94qbq94lMrizEFFd5N90oBiCDCojs"</span><span class="token punctuation">,</span>
+    token_type<span class="token operator">:</span><span class="token string">"bearer"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  message<span class="token operator">:</span><span class="token string">""</span>
+<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -982,6 +996,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/platform.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/platform.github.io/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->

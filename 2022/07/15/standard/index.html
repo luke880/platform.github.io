@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="工作流">
-    <meta name="description" content="简介工作流基于activity开源框架做二次封装功能，支持中国特色工作流：有撤回、驳回、驳回发起人、驳回上一步、任意节点驳回、驳回后直达驳回节点、任意节点跳转、会签后根据会签结果走不同出口、会签加签、减签等等。
-">
+    <meta name="keywords" content="开发说明|规范, 玄鉴中台">
+    <meta name="description" content="注解|规范|Java">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
 
     
 
-    <title>工作流 | 玄鉴中台</title>
+    <title>开发说明|规范 | 玄鉴中台</title>
     <link rel="icon" type="image/png" href="/platform.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/platform.github.io/libs/awesome/css/all.min.css">
@@ -247,12 +246,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0407%2Fb5a75e87j00qr6f1d004cc000sf00iym.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660122074&t=f93cde31c6379525fd9f51efeb4e85e8')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.qwkj.com%2Fuploads%2Fallimg%2F150903%2F1-150Z3133H32F.jpg&refer=http%3A%2F%2Fwww.qwkj.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660445970&t=cb57deda133c7b694e59364cf01ee431')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">工作流</h1>
+                    <h1 class="description center-align post-title">开发说明|规范</h1>
                 </div>
             </div>
         </div>
@@ -370,12 +369,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
-                                <span class="chip bg-color">工作流</span>
+                            <a href="/platform.github.io/tags/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/">
+                                <span class="chip bg-color">开发规范</span>
                             </a>
                         
-                            <a href="/platform.github.io/tags/activity/">
-                                <span class="chip bg-color">activity</span>
+                            <a href="/platform.github.io/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -386,8 +385,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/platform.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="post-category">
-                                工作流
+                            <a href="/platform.github.io/categories/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/" class="post-category">
+                                开发规范
+                            </a>
+                        
+                            <a href="/platform.github.io/categories/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -399,7 +402,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-11
+                    2022-07-15
                 </div>
                 
 
@@ -408,7 +411,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    86
+                    1.1k
                 </div>
                 
 
@@ -433,7 +436,147 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>工作流基于activity开源框架做二次封装功能，支持中国特色工作流：有撤回、驳回、驳回发起人、驳回上一步、任意节点驳回、驳回后直达驳回节点、任意节点跳转、会签后根据会签结果走不同出口、会签加签、减签等等。</p>
+                <h2 id="开发说明"><a href="#开发说明" class="headerlink" title="开发说明"></a>开发说明</h2><h3 id="EnableCustomConfig"><a href="#EnableCustomConfig" class="headerlink" title="@EnableCustomConfig"></a>@EnableCustomConfig</h3><p>服务启动类可以通过<code>@EnableCustomConfig </code>进行服务的初始化配置。该注解主要有以下几个作用：</p>
+<ol>
+<li>MappScan扫描支持</li>
+<li>ComponentScan扫描支持</li>
+</ol>
+<h3 id="EnableCustomSwagger2"><a href="#EnableCustomSwagger2" class="headerlink" title="@EnableCustomSwagger2"></a>@EnableCustomSwagger2</h3><p><code>@EnableCustomSwagger2</code> 对在线api文档支持，&#x2F;doc.html访问swagger加强</p>
+<h3 id="LoginUser"><a href="#LoginUser" class="headerlink" title="@LoginUser"></a>@LoginUser</h3><p>在controller参数中通过<code>@LoginUser SysUser loginUser</code> 获取当前登录用户<br><strong>示例</strong><br> <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/functions/manage"</span><span class="token punctuation">,</span> produces <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"application/json; charset=utf-8"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">ResponseEntity</span> <span class="token function">queryManageFunctions</span><span class="token punctuation">(</span><span class="token annotation punctuation">@LoginUser</span> <span class="token class-name">SysUser</span> loginUser<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// ... </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="Log-title-x3D-“设计”-businessType-x3D-BusinessType-INSERT"><a href="#Log-title-x3D-“设计”-businessType-x3D-BusinessType-INSERT" class="headerlink" title="@Log(title &#x3D; “设计”, businessType &#x3D; BusinessType.INSERT)"></a>@Log(title &#x3D; “设计”, businessType &#x3D; BusinessType.INSERT)</h3><p>在controller方法上通过注解<code>@Log </code>实现操作日志收集(主要针对曾、删、改操作)<br><strong>示例</strong><br> <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@PostMapping</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@ApiOperation</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"保存"</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Log</span><span class="token punctuation">(</span>title <span class="token operator">=</span> <span class="token string">"XXX保存"</span><span class="token punctuation">,</span> businessType <span class="token operator">=</span> <span class="token class-name">BusinessType</span><span class="token punctuation">.</span>INSERT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">ResObject</span> <span class="token function">save</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Validated</span><span class="token punctuation">(</span><span class="token class-name">ValidType<span class="token punctuation">.</span>Default</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span> <span class="token annotation punctuation">@RequestBody</span> <span class="token class-name">BpmDefinitionDesignVO</span> vo<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="Valid"><a href="#Valid" class="headerlink" title="@Valid"></a>@Valid</h3><p><code>@Valid</code>会对被标注的controller入参类进行参数校验</p>
+<p>被标注的类中有<code>@Length</code>注解标注的字段，则该字段不能超过指定长度</p>
+<p>被标注的类有<code>@NotBlank</code>注解标注的字段，则该字段不能为空</p>
+<p>更多参数校验注解请参考hibernate validator</p>
+<p>当校验条件不满足的时候，会进入统一异常处理，统一异常处理会给前端返回code为0，message为指定message的消息</p>
+<p><strong>示例</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">ResponseEntity</span> <span class="token function">save</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Valid</span> <span class="token annotation punctuation">@RequestBody</span> <span class="token class-name">DeptBasic</span> dept<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DeptBasic</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token annotation punctuation">@NotBlank</span><span class="token punctuation">(</span>message <span class="token operator">=</span> <span class="token string">"部门名称不可为空"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> jgMc<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Length</span><span class="token punctuation">(</span>max <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> message <span class="token operator">=</span> <span class="token string">"选用标志长度最大为1"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> xybs<span class="token punctuation">;</span>
+
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="开发规范"><a href="#开发规范" class="headerlink" title="开发规范"></a>开发规范</h2><h3 id="数据格式"><a href="#数据格式" class="headerlink" title="数据格式"></a>数据格式</h3><h4 id="1-写好代码注释，统一格式"><a href="#1-写好代码注释，统一格式" class="headerlink" title="1.写好代码注释，统一格式"></a>1.写好代码注释，统一格式</h4><p>类注释：<br>&#x2F;**</p>
+<ul>
+<li>@author 作者</li>
+<li>@Description 描述</li>
+<li>@Date 日期（年月日时分秒）<br>*&#x2F;</li>
+</ul>
+<p>方法注释：</p>
+<p>&#x2F;**</p>
+<ul>
+<li>@param formId  参数1描述</li>
+<li>@param instId  参数2描述</li>
+<li>@param taskKey 参数3描述</li>
+<li>@return  ResObject 返回描述<br>*&#x2F;</li>
+</ul>
+<h4 id="2-返回格式统一-“code”-””-”message”-””-”data”-””"><a href="#2-返回格式统一-“code”-””-”message”-””-”data”-””" class="headerlink" title="2.返回格式统一{“code”:””,”message”:””,”data”:””}"></a>2.返回格式统一{“code”:””,”message”:””,”data”:””}</h4><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>code</td>
+<td>200表示操作成功</td>
+</tr>
+<tr>
+<td>message</td>
+<td>提示信息</td>
+</tr>
+<tr>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+</tbody></table>
+<h4 id="3-做好异常处理"><a href="#3-做好异常处理" class="headerlink" title="3.做好异常处理"></a>3.做好异常处理</h4><p>所有接口都必须有异常抛出，在controller里捕获所有异常并做处理<br><strong>示例</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/getData"</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token class-name">RequestMethod</span><span class="token punctuation">.</span>GET<span class="token punctuation">,</span> produces <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"application/json; charset=utf-8"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+   <span class="token annotation punctuation">@ApiOperation</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"获取表单数据"</span><span class="token punctuation">,</span> httpMethod <span class="token operator">=</span> <span class="token string">"GET"</span><span class="token punctuation">,</span> notes <span class="token operator">=</span> <span class="token string">"获取表单数据"</span><span class="token punctuation">)</span>
+   <span class="token keyword">public</span> <span class="token class-name">ResObject</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token class-name">String</span> formId<span class="token punctuation">,</span> <span class="token class-name">String</span> instId<span class="token punctuation">,</span> <span class="token class-name">String</span> taskKey<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+       <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+           <span class="token class-name">List</span> result <span class="token operator">=</span> formDataService<span class="token punctuation">.</span><span class="token function">getDatas</span><span class="token punctuation">(</span>formId<span class="token punctuation">,</span> instId<span class="token punctuation">,</span> taskKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ResObject</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">"获取表单数据成功"</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">BusinessException</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">//业务异常捕获</span>
+           log<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ResObject</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">//程序异常捕获</span>
+           log<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"获取表单数据失败"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ResObject</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"获取表单数据失败"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">&#125;</span>
+   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="4-请求路劲规范"><a href="#4-请求路劲规范" class="headerlink" title="4.请求路劲规范"></a>4.请求路劲规范</h4><p>常规请求统一路径：<br>1.分页列表请求 GET &#x2F;modelName&#x2F;list<br>示例：</p>
+<pre class="line-numbers language-none"><code class="language-none">@GetMapping(&quot;list&quot;)
+@ApiOperation(value &#x3D; &quot;流程定义列表&quot;)
+@Log(title &#x3D; &quot;流程设计&quot;, businessType &#x3D; BusinessType.INSERT)
+public ResObject list(@LoginUser SysUser sysUser, BpmDefinitionDesignVO vo) &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>详情请求 GET &#x2F;modelName&#x2F;{modelId}</p>
+<pre class="line-numbers language-none"><code class="language-none">@GetMapping(value &#x3D; &#123;&quot;&#x2F;&quot;, &quot;&#x2F;&#123;modelId&#125;&quot;&#125;)
+@ApiOperation(value &#x3D; &quot;获取用户信息&quot;)
+public ResObject getUser(@PathVariable(value &#x3D; &quot;modelId&quot;, required &#x3D; true) String modelId)) &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.保存请求 POST &#x2F;modelName&#x2F;<br>示例：</p>
+<pre class="line-numbers language-none"><code class="language-none">@PostMapping(&quot;&quot;)
+@ApiOperation(value &#x3D; &quot;定义保存&quot;)
+@Log(title &#x3D; &quot;设计&quot;, businessType &#x3D; BusinessType.INSERT)
+public ResObject saveDefinition(@LoginUser SysUser sysUser, @Validated(ValidType.Default.class) @RequestBody DefinitionDesignVO vo) &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>3.更新请求 PUT &#x2F;modelName&#x2F;<br>示例：</p>
+<pre class="line-numbers language-none"><code class="language-none">@PutMapping(&quot;&quot;)
+@ApiOperation(value &#x3D; &quot;定义更新&quot;)
+@Log(title &#x3D; &quot;设计&quot;, businessType &#x3D; BusinessType.UPDATE)
+public ResObject updateDefinition(@LoginUser SysUser sysUser, @Validated(ValidType.Default.class) @RequestBody DefinitionDesignVO vo) &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>4.删除请求 DELETE &#x2F;modelName&#x2F;</p>
+<pre class="line-numbers language-none"><code class="language-none">@DeleteMapping(&quot;&quot;)
+@ApiOperation(value &#x3D; &quot;定义删除&quot;)
+@Log(title &#x3D; &quot;设计&quot;, businessType &#x3D; BusinessType.DELETE)
+public ResObject deleteDefinition(@LoginUser SysUser sysUser,DefinitionDesignVO vo) &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-feign"><a href="#5-feign" class="headerlink" title="5.feign"></a>5.feign</h4><p>以feign形式提供接口服务，接口地址统一“&#x2F;api”开头</p>
+<h4 id="6-mybatis-plus"><a href="#6-mybatis-plus" class="headerlink" title="6.mybatis-plus"></a>6.mybatis-plus</h4><p>mapper、dao 继承类BaseMapper<T>，并在T实体类上添加@TableName、@TableId注解<br><strong>示例</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Data</span>
+<span class="token annotation punctuation">@TableName</span><span class="token punctuation">(</span><span class="token string">"sys_unit"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SysUnit</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// ...实体类</span>
+    <span class="token comment">/**
+     * 机构主键
+     */</span>
+    <span class="token annotation punctuation">@TableId</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> unitId<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">SysUnitMapper</span> <span class="token keyword">extends</span> <span class="token class-name">BaseMapper</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SysUnit</span><span class="token punctuation">></span></span> <span class="token punctuation">&#123;</span>
+ <span class="token comment">// ...mapper || dao接口类 肠过操作可以省略代码块及自动映射</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-版本管理提交格式"><a href="#7-版本管理提交格式" class="headerlink" title="7.版本管理提交格式"></a>7.版本管理提交格式</h4><p>1.git版本管理提交：<br>add：新增XXX功能<br>fix：修复XXXbug  ||  完善XXX功能</p>
+<p>2.svn版本管理提交：<br>【提交人】XXX<br>【处理模块】工作流表单服务<br>【解决问题】新增添加表单保存接口</p>
+<h4 id="8-代码生成"><a href="#8-代码生成" class="headerlink" title="8.代码生成"></a>8.代码生成</h4><p>地址：<br><a target="_blank" rel="noopener" href="http://192.168.6.116:8080/">http://192.168.6.116:8080</a><br>需要先设计数据库表，根据表结构生成controller\service\dao\entity\mapper.xml等相关代码文件</p>
+<h4 id="9-license存放位置"><a href="#9-license存放位置" class="headerlink" title="9.license存放位置"></a>9.license存放位置</h4><p>win：将license文件存放到应用所在的磁盘根路径&#x2F;opt&#x2F;license&#x2F;文件夹下<br>linux：将license文件存放到&#x2F;opt&#x2F;license&#x2F;文件夹下</p>
 
                 
             </div>
@@ -460,7 +603,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luke880.github.io/platform.github.io/2022/07/11/engine/">https://luke880.github.io/platform.github.io/2022/07/11/engine/</a>
+                    <a href="https://luke880.github.io/platform.github.io/2022/07/15/standard/">https://luke880.github.io/platform.github.io/2022/07/15/standard/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -498,12 +641,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
-                                    <span class="chip bg-color">工作流</span>
+                                <a href="/platform.github.io/tags/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/">
+                                    <span class="chip bg-color">开发规范</span>
                                 </a>
                             
-                                <a href="/platform.github.io/tags/activity/">
-                                    <span class="chip bg-color">activity</span>
+                                <a href="/platform.github.io/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -548,9 +691,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/platform.github.io/2022/07/15/standard/">
                     <div class="card-image">
@@ -567,9 +711,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -586,6 +730,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -608,12 +753,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/platform.github.io/2022/07/08/index/">
+                <a href="/platform.github.io/2022/07/11/engine/">
                     <div class="card-image">
                         
-                        <img src="/platform.github.io/medias/pic/jgt.JPG" class="responsive-img" alt="玄剑中台">
+                        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0407%2Fb5a75e87j00qr6f1d004cc000sf00iym.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660122074&t=f93cde31c6379525fd9f51efeb4e85e8" class="responsive-img" alt="工作流">
                         
-                        <span class="card-title">玄剑中台</span>
+                        <span class="card-title">工作流</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -624,14 +769,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/platform.github.io/categories/%E6%9E%B6%E6%9E%84%E5%9B%BE/" class="post-category">
-                                    架构图
+                            <a href="/platform.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="post-category">
+                                    工作流
                                 </a>
                             
                             
@@ -641,12 +786,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/platform.github.io/tags/%E4%B8%AD%E5%8F%B0/">
-                        <span class="chip bg-color">中台</span>
+                    <a href="/platform.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">
+                        <span class="chip bg-color">工作流</span>
                     </a>
                     
-                    <a href="/platform.github.io/tags/%E6%9E%B6%E6%9E%84%E5%9B%BE/">
-                        <span class="chip bg-color">架构图</span>
+                    <a href="/platform.github.io/tags/activity/">
+                        <span class="chip bg-color">activity</span>
                     </a>
                     
                 </div>
