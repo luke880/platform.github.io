@@ -20,7 +20,7 @@
       
         <tags>
             
-            <tag> java </tag>
+            <tag> Java </tag>
             
             <tag> jdk8 </tag>
             
@@ -47,7 +47,7 @@
       
         <tags>
             
-            <tag> java </tag>
+            <tag> Java </tag>
             
             <tag> jdk8 </tag>
             
@@ -74,7 +74,7 @@
       
         <tags>
             
-            <tag> java </tag>
+            <tag> Java </tag>
             
             <tag> jdk8 </tag>
             
@@ -103,9 +103,9 @@
       
         <tags>
             
-            <tag> 非对称 </tag>
-            
             <tag> 国密 </tag>
+            
+            <tag> 非对称 </tag>
             
             <tag> sm3 </tag>
             
@@ -134,9 +134,9 @@
       
         <tags>
             
-            <tag> 国密 </tag>
-            
             <tag> 对称 </tag>
+            
+            <tag> 国密 </tag>
             
             <tag> sm4 </tag>
             
@@ -165,9 +165,9 @@
       
         <tags>
             
-            <tag> 开发规范 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> 开发规范 </tag>
             
         </tags>
       
