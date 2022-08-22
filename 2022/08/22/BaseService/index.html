@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="工作流">
-    <meta name="description" content="service接口类继承该接口，即可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可entity类需要继承BaseEntity：@TableName(keepGlobalPrefix = tr">
+    <meta name="description" content="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可entity类需要继承BaseEntity：@TableName(keepGlobalPr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -433,7 +433,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    338
+                    336
                 </div>
                 
 
@@ -458,7 +458,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="service接口类继承该接口，即可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"><a href="#service接口类继承该接口，即可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可" class="headerlink" title="service接口类继承该接口，即可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"></a>service接口类继承该接口，即可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可</h3><h3 id="entity类需要继承BaseEntity："><a href="#entity类需要继承BaseEntity：" class="headerlink" title="entity类需要继承BaseEntity："></a>entity类需要继承BaseEntity：</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@TableName</span><span class="token punctuation">(</span>keepGlobalPrefix <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> value <span class="token operator">=</span> <span class="token string">"sys_report_data_source"</span><span class="token punctuation">)</span>
+                <h3 id="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"><a href="#service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可" class="headerlink" title="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"></a>service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可</h3><h3 id="entity类需要继承BaseEntity："><a href="#entity类需要继承BaseEntity：" class="headerlink" title="entity类需要继承BaseEntity："></a>entity类需要继承BaseEntity：</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@TableName</span><span class="token punctuation">(</span>keepGlobalPrefix <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> value <span class="token operator">=</span> <span class="token string">"sys_report_data_source"</span><span class="token punctuation">)</span>
 <span class="token annotation punctuation">@Data</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DataSource</span> <span class="token keyword">extends</span> <span class="token class-name">BaseEntity</span> <span class="token punctuation">&#123;</span>
 
@@ -575,6 +575,7 @@
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimage.bubuko.com%2Finfo%2F201804%2F20180427173324585560.png&refer=http%3A%2F%2Fimage.bubuko.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1663746428&t=990c6e21c1943ef009f6643e7651a637" alt="佛祖保佑"></p>
 
                 
             </div>
