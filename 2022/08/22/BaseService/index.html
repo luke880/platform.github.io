@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="工作流">
-    <meta name="description" content="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可entity类需要继承BaseEntity：@TableName(keepGlobalPr">
+    <meta name="description" content="基础BaseService作用Service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可
+代码示例entity类需要继承BaseEntity：@Ta">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -433,7 +434,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    336
+                    345
                 </div>
                 
 
@@ -458,13 +459,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"><a href="#service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可" class="headerlink" title="service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可"></a>service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可</h3><h3 id="entity类需要继承BaseEntity："><a href="#entity类需要继承BaseEntity：" class="headerlink" title="entity类需要继承BaseEntity："></a>entity类需要继承BaseEntity：</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@TableName</span><span class="token punctuation">(</span>keepGlobalPrefix <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> value <span class="token operator">=</span> <span class="token string">"sys_report_data_source"</span><span class="token punctuation">)</span>
+                <h3 id="基础BaseService作用"><a href="#基础BaseService作用" class="headerlink" title="基础BaseService作用"></a>基础BaseService作用</h3><p>Service接口类继承BaseService接口，可默认实现分页列表、保存、更新、删除、详情等接口，支持自定义重写；controller直接调用即可</p>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><h4 id="entity类需要继承BaseEntity："><a href="#entity类需要继承BaseEntity：" class="headerlink" title="entity类需要继承BaseEntity："></a>entity类需要继承BaseEntity：</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@TableName</span><span class="token punctuation">(</span>keepGlobalPrefix <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> value <span class="token operator">=</span> <span class="token string">"sys_report_data_source"</span><span class="token punctuation">)</span>
 <span class="token annotation punctuation">@Data</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DataSource</span> <span class="token keyword">extends</span> <span class="token class-name">BaseEntity</span> <span class="token punctuation">&#123;</span>
 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="service接口类继承BaseService"><a href="#service接口类继承BaseService" class="headerlink" title="service接口类继承BaseService"></a>service接口类继承BaseService<T></h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">DataSourceService</span> <span class="token keyword">extends</span> <span class="token class-name">BaseService</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DataSource</span><span class="token punctuation">></span></span> <span class="token punctuation">&#123;</span>
+<h4 id="service接口类继承BaseService"><a href="#service接口类继承BaseService" class="headerlink" title="service接口类继承BaseService"></a>service接口类继承BaseService<T></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">DataSourceService</span> <span class="token keyword">extends</span> <span class="token class-name">BaseService</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DataSource</span><span class="token punctuation">></span></span> <span class="token punctuation">&#123;</span>
 
     <span class="token annotation punctuation">@Autowired</span>
     <span class="token keyword">private</span> <span class="token class-name">DataSourceMapper</span> dataSourceMapper<span class="token punctuation">;</span>
@@ -475,7 +477,7 @@
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="BaseService类接口内容："><a href="#BaseService类接口内容：" class="headerlink" title="BaseService类接口内容："></a>BaseService类接口内容：</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">BaseService</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span> <span class="token keyword">extends</span> <span class="token class-name">BaseEntity</span><span class="token punctuation">></span></span> <span class="token punctuation">&#123;</span>
+<h4 id="BaseService类接口内容："><a href="#BaseService类接口内容：" class="headerlink" title="BaseService类接口内容："></a>BaseService类接口内容：</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">BaseService</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span> <span class="token keyword">extends</span> <span class="token class-name">BaseEntity</span><span class="token punctuation">></span></span> <span class="token punctuation">&#123;</span>
     <span class="token comment">/**
      * 需要实现，定义Mapper
      *
