@@ -412,7 +412,7 @@
                         
                         <div class="info-break-policy">
                             <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                            134
+                            151
                         </div>
                         
 
@@ -438,7 +438,12 @@
                 <div class="card-content article-card-content">
                     <div id="articleContent">
                         <h2 id="版本V3-2-0-cloud"><a href="#版本V3-2-0-cloud" class="headerlink" title="版本V3.2.0-cloud"></a>版本V3.2.0-cloud</h2><p>将注册中心从Eureka改成Nacos，并且配置文件通过Nacos管理<br>项目环境搭建依赖中台基础运行环境，包含了springboot、springcloud、Nacos、数据源、数据库驱动、swagger等一些基础依赖及工具依赖</p>
-<p>&#96;&#96;&#96;java<br>        <!-- 中台基础运行环境 --><br>        <dependency><br>            <groupId>com.easyweb</groupId><br>            <artifactId>easyweb-common-runtime</artifactId><br>        </dependency><br>、、、</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 中台基础运行环境 <span class="token operator">--</span><span class="token operator">></span>
+<span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">></span></span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">></span></span>com<span class="token punctuation">.</span>easyweb<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">></span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">></span></span>easyweb<span class="token operator">-</span>common<span class="token operator">-</span>runtime<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h2 id="版本V3-1-0-cloud"><a href="#版本V3-1-0-cloud" class="headerlink" title="版本V3.1.0-cloud"></a>版本V3.1.0-cloud</h2><p>  springboot升级到2.7.2<br>  springcloud升级到2021.0.1<br>  spring-cloud-alibaba升级到2021.0.1.0</p>
 <h2 id="版本V3-0-1-cloud"><a href="#版本V3-0-1-cloud" class="headerlink" title="版本V3.0.1-cloud"></a>版本V3.0.1-cloud</h2><p>  工作流功主体功能发布稳定版本<br>  新增工作台、租户等功能</p>
 
